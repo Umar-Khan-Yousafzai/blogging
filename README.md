@@ -29,7 +29,7 @@ Follow these instructions to set up the Blogging Website on your local machine.
 ### Clone the Code
 
 ```bash
-# git clone https://github.com/your-username/blogging-website.git
+git clone https://github.com/Umar-Khan-Yousafzai/blogging
 php artisan migrate
 php artisan db:seed --class=mainSeeder
 By default, the password for all users is set to "password."
