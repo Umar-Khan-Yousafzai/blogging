@@ -1,0 +1,384 @@
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+.bgImg {
+    background-image: url(../images/contact.jpeg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+}
+
+.navbar .nav-item {
+    padding: 10px 20px;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.fa-bars {
+    color: black !important;
+    font-size: 30px;
+}
+
+.bg-dark {
+    background-color: white !important;
+}
+
+a {
+    /* color: #007bff; */
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.l-60 {
+    line-height: 60px !important;
+}
+
+.flickity-slider {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+.flickity-prev-next-button {
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.flickity-button {
+    position: absolute;
+    background: hsla(0, 0%, 100%, .75);
+    border: none;
+    color: #333;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 15%;
+}
+
+.search-icon a {
+    display: block;
+}
+
+#click {
+    display: none;
+}
+
+.menu-btn img {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+}
+
+.dropdown-menu {
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav {
+    width: 95%;
+    float: right;
+
+}
+
+.nav-bar {
+    width: 60%;
+}
+
+.nav-bar nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-bar nav ul li {
+    list-style-type: none;
+}
+
+.nav-bar nav ul .logo {
+    font-weight: bolder;
+}
+
+.nav-bar nav ul .logo::before {
+    content: url('image/logo.png');
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: -48px;
+}
+
+.nav-bar nav ul .logo {
+    position: relative;
+    left: 0%;
+    margin-left: -8px;
+}
+
+.nav-bar nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+@media(max-width:768px) {
+
+    .container {
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .container::before {
+        content: url('image/logo1.png');
+        position: absolute;
+        top: 0%;
+        left: 0;
+    }
+
+    .nav-bar {
+        width: 100%;
+        text-align: right;
+    }
+
+    .container nav ul {
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        right: 0;
+        transition: 0.3s;
+        display: none;
+        background-color: black;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .nav-bar nav ul li {
+        margin: 20px 0;
+        display: block;
+    }
+
+    .nav-bar nav ul li a {
+        color: white !important;
+    }
+
+    .nav-bar li a.active {
+        color: white;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .menu-btn img {
+        display: block;
+        padding: 20px 10px 20px 10px;
+        height: 75px;
+        float: left;
+        position: absolute;
+        top: 38px;
+        /* left: 0; */
+        right: 0;
+    }
+
+    #click:checked~ul {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top: 75%;
+    }
+
+    .nav-bar nav ul .logo::before {
+        display: none;
+    }
+
+    #click:checked ul li a {
+        color: white !important;
+    }
+
+    .flickity-prev-next-button {
+        top: 30% !important;
+    }
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+    /* background-color: black; */
+    background-image: none;
+}
+
+.text-sm {
+    font-size: 20px !important;
+    line-height: 30px !important;
+}
+
+/*Singal Blog author section*/
+.author {
+    padding-left: 30px;
+}
+
+.author p {
+    font-size: 14px;
+}
+
+/* Slider css */
+
+.flickity-prev-next-button.previous {
+    left: 94%;
+    position: absolute;
+    top: -30px;
+}
+
+.flickity-prev-next-button.next {
+    /* right: 10px; */
+    position: absolute;
+    top: -30px;
+}
+
+/* @media (max-width: 768px) {
+    .flickity-prev-next-button.previous {
+        left: 0 !important;
+    position: absolute;
+    top: -30px;
+
+    }
+    .flickity-prev-next-button.next {
+        right: 10px !important;
+        position: absolute;
+
+    }
+ } */
+/*Custom heading for author image */
+img.custom {
+    height: 80px;
+    width: 85px;
+    object-fit: cover;
+}
+
+.flickity-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.flickity-button:hover {
+    background: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .flickity-prev-next-button.previous {
+        left: 0% !important;
+        position: absolute;
+        top: -30px;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    img.custom {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+    }
+
+    .custom-para {
+        width: 100% !important;
+    }
+
+    .text-5xl {
+        font-size: 30px !important;
+    }
+}
+
+.user-profile:hover .context-menu {
+    display: block;
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    /* Black background color */
+    border: 1px solid #333;
+    /* Dark border */
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow for a subtle effect */
+    color: #fff;
+    /* White text color */
+    z-index: 10;
+    /* Ensure the menu appears above other elements */
+}
+
+.context-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    /* White text color */
+    transition: background-color 0.3s ease;
+}
+
+.context-menu a:hover {
+    background-color: #333;
+    /* Darker background on hover */
+}
+.pagination .page-item.active .page-link {
+    background-color: #4caf50; /* Green color, you can change it to your desired color */
+    color: white; /* Text color on the active page */
+}
